@@ -47,7 +47,7 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
+  <Link href={href} as = passHref>
     <a className={className}>{children}</a>
   </Link>
 )
@@ -75,7 +75,7 @@ export default styled(StyledLink)`
 import StyledLink from '../components/StyledLink'
 
 export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
+  <StyledLink href='/post/[pid]' forwardedAs='/post/abc'>
     First post
   </StyledLink>
 )
